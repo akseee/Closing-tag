@@ -17,4 +17,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-ff, 'Inter', sans-serif);
+  font-weight: var(--main-fw);
+  background: var(--b-g-image) fixed center / cover;
+  color: var(--main-text-color);
 }
