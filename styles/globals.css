@@ -35,11 +35,17 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  background-color: transparent;
 }
 
 ul,
 ol {
   list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 .visually-hidden {

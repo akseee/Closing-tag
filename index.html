@@ -3,18 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-    name="description"
-    content=""
-  />
-  <meta name="color-scheme" content="light dark" />
-  <link rel="icon" href="./images/favicon.svg" sizes="any"/>
-  <link
-    rel="shortcut icon"
-    href="./images/favicon.svg"
-    type="image/svg+xml"
-  />
-  <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <meta name="description" content="" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -26,34 +23,212 @@
   </head>
   <body class="page">
     <header class="header">
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
+      <div class="header__content">
+        <div class="header__titles">
+          <h1 class="header__title">&lt;/HTML&gt;</h1>
+          <h2 class="header__subtitle">закрывающий тег</h2>
+        </div>
+        <nav class="theme-menu header__theme-menu">
+          <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+          <ul class="theme-menu__list">
+            <li class="theme-menu__item">
+              <button
+                type="button"
+                data-theme="dark"
+                class="theme-menu__button"
+              >
+                Темно
+              </button>
+            </li>
+            <li class="theme-menu__item">
+              <button
+                type="button"
+                data-theme="auto"
+                disabled
+                class="theme-menu__button"
+              >
+                Авто
+              </button>
+            </li>
+            <li class="theme-menu__item">
+              <button
+                type="button"
+                data-theme="light"
+                class="theme-menu__button"
+              >
+                Светло
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__content">
+        <ul class="card__list">
+
+          <li class="card__list-item">
+            <h3 class="card__title card-border">Фритрек и нулевой спринт: Подготовка к работе</h3>
+            <div class="card__image">
+              <img class="image" src="./images/test.png" alt="bus" />
+              <span class="image-watermark">watermark</span>
+            </div>
+            <div class="card__footer card-border">
+                <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+                <p class="card__text">Место для ваших воспоминаний о начале обучения.
+                <div class="like-buttons">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="heart animation white">
+                      <g id="Vector">
+                        <path d="M12 6H9V9H12V6Z" fill="black" />
+                        <path d="M15 6H12V9H15V6Z" fill="black" />
+                        <path d="M9 9H6V12H9V9Z" fill="black" />
+                        <path d="M9 12H6V15H9V12Z" fill="black" />
+                        <path d="M9 15H6V18H9V15Z" fill="black" />
+                        <path d="M18 6H15V9H18V6Z" fill="black" />
+                        <path d="M12 18H9V21H12V18Z" fill="black" />
+                        <path d="M15 21H12V24H15V21Z" fill="black" />
+                        <path d="M18 24H15V27H18V24Z" fill="black" />
+                        <path d="M27 6H30V9H27V6Z" fill="black" />
+                        <path d="M24 6H27V9H24V6Z" fill="black" />
+                        <path d="M30 9H33V12H30V9Z" fill="black" />
+                        <path d="M30 12H33V15H30V12Z" fill="black" />
+                        <path d="M30 15H33V18H30V15Z" fill="black" />
+                        <path d="M21 6H24V9H21V6Z" fill="black" />
+                        <path d="M27 18H30V21H27V18Z" fill="black" />
+                        <path d="M24 21H27V24H24V21Z" fill="black" />
+                        <path d="M21 24H24V27H21V24Z" fill="black" />
+                        <path d="M21 9H18V12H21V9Z" fill="black" />
+                        <path d="M21 27H18V30H21V27Z" fill="black" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
           </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
+          <li class="card__list-item">
+            <h3 class="card__title card-border">Фритрек и нулевой спринт: Подготовка к работе</h3>
+            <div class="card__image">
+              <img class="image" src="./images/test.png" alt="bus" />
+              <span class="image-watermark">watermark</span>
+            </div>
+            <div class="card__footer card-border">
+                <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+                <p class="card__text">Место для ваших воспоминаний о начале обучения.
+                <div class="like-buttons">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="heart animation white">
+                      <g id="Vector">
+                        <path d="M12 6H9V9H12V6Z" fill="black" />
+                        <path d="M15 6H12V9H15V6Z" fill="black" />
+                        <path d="M9 9H6V12H9V9Z" fill="black" />
+                        <path d="M9 12H6V15H9V12Z" fill="black" />
+                        <path d="M9 15H6V18H9V15Z" fill="black" />
+                        <path d="M18 6H15V9H18V6Z" fill="black" />
+                        <path d="M12 18H9V21H12V18Z" fill="black" />
+                        <path d="M15 21H12V24H15V21Z" fill="black" />
+                        <path d="M18 24H15V27H18V24Z" fill="black" />
+                        <path d="M27 6H30V9H27V6Z" fill="black" />
+                        <path d="M24 6H27V9H24V6Z" fill="black" />
+                        <path d="M30 9H33V12H30V9Z" fill="black" />
+                        <path d="M30 12H33V15H30V12Z" fill="black" />
+                        <path d="M30 15H33V18H30V15Z" fill="black" />
+                        <path d="M21 6H24V9H21V6Z" fill="black" />
+                        <path d="M27 18H30V21H27V18Z" fill="black" />
+                        <path d="M24 21H27V24H24V21Z" fill="black" />
+                        <path d="M21 24H24V27H21V24Z" fill="black" />
+                        <path d="M21 9H18V12H21V9Z" fill="black" />
+                        <path d="M21 27H18V30H21V27Z" fill="black" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
           </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
+          <li class="card__list-item">
+            <h3 class="card__title card-border">Фритрек и нулевой спринт: Подготовка к работе</h3>
+            <div class="card__image">
+              <img class="image" src="./images/test.png" alt="bus" />
+              <span class="image-watermark">watermark</span>
+            </div>
+            <div class="card__footer card-border">
+                <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+                <p class="card__text">Место для ваших воспоминаний о начале обучения.
+                <div class="like-buttons">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="heart animation white">
+                      <g id="Vector">
+                        <path d="M12 6H9V9H12V6Z" fill="black" />
+                        <path d="M15 6H12V9H15V6Z" fill="black" />
+                        <path d="M9 9H6V12H9V9Z" fill="black" />
+                        <path d="M9 12H6V15H9V12Z" fill="black" />
+                        <path d="M9 15H6V18H9V15Z" fill="black" />
+                        <path d="M18 6H15V9H18V6Z" fill="black" />
+                        <path d="M12 18H9V21H12V18Z" fill="black" />
+                        <path d="M15 21H12V24H15V21Z" fill="black" />
+                        <path d="M18 24H15V27H18V24Z" fill="black" />
+                        <path d="M27 6H30V9H27V6Z" fill="black" />
+                        <path d="M24 6H27V9H24V6Z" fill="black" />
+                        <path d="M30 9H33V12H30V9Z" fill="black" />
+                        <path d="M30 12H33V15H30V12Z" fill="black" />
+                        <path d="M30 15H33V18H30V15Z" fill="black" />
+                        <path d="M21 6H24V9H21V6Z" fill="black" />
+                        <path d="M27 18H30V21H27V18Z" fill="black" />
+                        <path d="M24 21H27V24H24V21Z" fill="black" />
+                        <path d="M21 24H24V27H21V24Z" fill="black" />
+                        <path d="M21 9H18V12H21V9Z" fill="black" />
+                        <path d="M21 27H18V30H21V27Z" fill="black" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reiciendis cupiditate voluptas similique placeat minima, id corporis sed voluptates sit, eum numquam veniam quae nemo exercitationem accusantium quia rerum blanditiis!</p>
+        <button>
+          <img src="./svg/floppy-disk.svg" alt="" />
+          <!-- <svg>
+            <use href=""></use>
+          </svg> -->
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

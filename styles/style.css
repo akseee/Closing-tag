@@ -6,7 +6,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -19,6 +18,137 @@
   min-block-size: 100dvb;
   font-family: var(--main-ff, 'Inter', sans-serif);
   font-weight: var(--main-fw);
-  background: var(--b-g-image) fixed center / cover;
+  background: var(--bg-image) fixed center / cover;
   color: var(--main-text-color);
 }
+
+.header {
+  background-color: var(--bg-color);
+  margin: 100px auto;
+  font-family: var(--accent-ff);
+  width: var(--width);
+  border: 2px solid var(--accent-color);
+}
+
+/* margin-block-start: min: 120px  max: 136px */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 25px;
+  margin: clamp(7.5rem, 6.3318rem + 4.9844vw, 8.5rem) 0 25px;
+} 
+
+.header__titles {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+
+}
+
+/* font-size: min: 49px max: 65px*/
+.header__title {
+  font-weight: 400;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+/* font-size: min: 14px max: 23px*/
+.header__subtitle {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+}
+
+.theme-menu {
+}
+
+.header__theme-menu {
+height: 70px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.theme-menu__item {
+  font-size: 14px;
+  line-height: 100%;
+  padding-inline-start: 15px;
+}
+
+
+.theme-menu__button {
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+} 
+
+/* main section */
+.main__content {
+}
+
+/* cards */
+
+.main {}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.card-border {
+  border: 2px solid var(--accent-color);
+}
+.card__list-item {
+  background-color: var(--bg-color);
+  width: var(--width);
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 3px 24px 3px 10px;
+}
+.card__image {
+  position: relative;
+}
+.image {
+}
+.image-watermark {
+  opacity: 0.5;
+  font-size: 14px;
+  font-family: var(--accent-ff);
+  position: absolute;
+  right: 0;
+  top: 0;
+  mix-blend-mode: hard-light;
+}
+
+.card__footer {
+
+}
+.card__text {
+}
+.text {
+}
+.card__icon-button {
+}
+.like-icon {
+}
+.card__like-button {
+}
+.button__text {
+}
+
+
+
+/* media */
+@media (width <=375px) {
+  .header {
+    width: 100%;
+  }
+} 
