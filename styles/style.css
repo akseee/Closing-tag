@@ -88,7 +88,6 @@ height: 70px;
 .theme-menu__button {
   position: relative;
   text-transform: uppercase;
-  border: none;
   padding: 0;
   cursor: pointer;
   transition: 0.3s ease;
@@ -140,7 +139,11 @@ height: 70px;
 /* cards */
 
 .main {}
+
+
+
 .card__list {
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -155,7 +158,6 @@ height: 70px;
   width: var(--width);
 }
 .card__title {
-  font-size: 18px;
   font-weight: 700;
   padding: 3px 24px 3px 10px;
 }
@@ -169,19 +171,25 @@ height: 70px;
   font-size: 14px;
   font-family: var(--accent-ff);
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 25px;
+  right: 25px;
   mix-blend-mode: hard-light;
 }
 
 .card__footer {
-
+  padding-block-end: 25px;
 }
 .card__text {
+  line-height: 116.667%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 .text {
 }
 
+/* buttons */
 
 .card__icon-button {
 }
@@ -191,6 +199,21 @@ height: 70px;
 }
 .button__text {
 }
+
+
+/* buttons */
+
+.button {
+  border: 1px solid var(--accent-color);
+}
+
+.button:focus {
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
+
 
 
 @keyframes arrow {
@@ -207,5 +230,12 @@ height: 70px;
 @media (width <=375px) {
   .header {
     width: 100%;
+  }
+
+
+
+  .image-watermark {
+    top: 25px;
+    right: 11px;
   }
 } 
