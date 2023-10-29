@@ -223,9 +223,10 @@ height: 70px;
 
 .like-icon {
 }
+
 .card__like-button {
   block-size: 100%;
-  padding: 9px 17px;
+  padding:0 17px;
   inline-size: 130px;
 }
 
