@@ -16,7 +16,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-ff, 'Inter', sans-serif);
+  font-family: var(--main-ff, "Inter", sans-serif);
   font-weight: var(--main-fw);
   background: var(--bg-image) fixed center / cover;
   color: var(--main-text-color);
@@ -38,15 +38,13 @@
   align-items: center;
   gap: 25px;
   margin: clamp(7.5rem, 6.3318rem + 4.9844vw, 8.5rem) 0 25px;
-} 
+}
 
 .header__titles {
-  
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: center;
-
 }
 
 /* font-size: min: 49px max: 65px*/
@@ -59,14 +57,13 @@
 .header__subtitle {
   font-weight: 400;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-
 }
 
 .theme-menu {
 }
 
 .header__theme-menu {
-height: 70px;
+  height: 70px;
 }
 
 .theme-menu__list {
@@ -75,15 +72,11 @@ height: 70px;
   gap: 14px;
 }
 
-
-
-
 .theme-menu__item {
   font-size: 14px;
   line-height: 100%;
   padding-inline-start: 15px;
 }
-
 
 .theme-menu__button {
   position: relative;
@@ -91,15 +84,14 @@ height: 70px;
   padding: 0;
   cursor: pointer;
   transition: 0.3s ease;
-} 
+}
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   display: inline-block;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
-
 
 .theme-menu__button:hover {
   opacity: 0.6;
@@ -116,7 +108,7 @@ height: 70px;
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -128,19 +120,14 @@ height: 70px;
   width: 100%;
 }
 
-
-
-
-
 /* main section */
 .main__content {
 }
 
 /* cards */
 
-.main {}
-
-
+.main {
+}
 
 .card__list {
   font-size: 18px;
@@ -158,6 +145,7 @@ height: 70px;
   width: var(--width);
 }
 .card__title {
+  font-size: 18px;
   font-weight: 700;
   padding: 3px 24px 3px 10px;
 }
@@ -177,13 +165,16 @@ height: 70px;
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 1px var(--text-stroke)) or (-webkit-text-stroke: 1px var(--text-stroke))) {
+@supports (
+  (text-stroke: 1px var(--text-stroke)) or
+    (-webkit-text-stroke: 1px var(--text-stroke))
+) {
   .image-watermark {
-      -webkit-text-stroke: 1px var(--text-stroke);
-      text-stroke: 1px var(--text-stroke);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-stroke);
+    text-stroke: 1px var(--text-stroke);
+    text-shadow: none;
   }
-} 
+}
 
 .card__footer {
   display: flex;
@@ -200,7 +191,6 @@ height: 70px;
   line-height: 116.667%;
 }
 
-
 .like-buttons {
   margin: 0 25px 25px;
   align-self: end;
@@ -211,27 +201,26 @@ height: 70px;
 }
 
 .card__icon-button {
+  block-size: 100%;
   border: 2px solid transparent;
+  padding: 0;
 }
 .card__icon-button:focus {
   outline: none;
 }
 .card__icon-button:focus-visible {
+  transition: 0.3s ease;
   border: 2px solid var(--accent-color);
 }
-
 
 .like-icon {
 }
 
 .card__like-button {
   block-size: 100%;
-  padding:0 17px;
+  padding: 0 17px;
   inline-size: 130px;
 }
-
-
-/* buttons */
 
 .button {
   border: 2px solid var(--accent-color);
@@ -239,16 +228,14 @@ height: 70px;
   background-color: var(--bg-color);
 }
 
-
 .button:focus {
   outline: none;
   transition: 0.3s ease;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
-
 .button::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -275,7 +262,6 @@ height: 70px;
   mix-blend-mode: difference;
 }
 
-
 .footer {
   max-inline-size: 314px;
   background-color: var(--bg-color);
@@ -291,7 +277,6 @@ height: 70px;
   padding: 15px 0;
 }
 
-
 .save-button__icon {
   width: 21px;
   aspect-ratio: 1;
@@ -305,6 +290,39 @@ height: 70px;
 
 
 
+.hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.grayscale {
+  filter: grayscale(80%);
+}
+
+.contrast {
+  filter: contrast(200%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.opacity {
+  filter: opacity(25%);
+}
+
+.invert {
+  filter: invert(75%);
+}
+
+.saturate {
+  filter: saturate(90%);
+}
+
+.multiple {
+  filter:brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+  filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+}
+
 @keyframes arrow {
   from {
     transform: translateX(-20px);
@@ -314,17 +332,17 @@ height: 70px;
   }
 }
 
-
 /* media */
 @media (width <=375px) {
   .header {
     width: 100%;
   }
 
-
-
   .image-watermark {
     top: 25px;
     right: 11px;
   }
-} 
+  .footer__save-button {
+    flex-direction: column;
+  }
+}
