@@ -5,8 +5,10 @@
   --accent-ff: "PressStart2P-Regular", monospace;
   --main-fw: 400;
   --accent-fw: 700;
+  --text-stroke: #fff;
   --main-text-color: #000;
   --accent-color: #000;
+  --button-hover: #fff;
   --bg-color: #fff;
   --bg-image: repeating-linear-gradient(
       90deg,

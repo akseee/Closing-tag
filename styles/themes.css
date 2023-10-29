@@ -10,6 +10,8 @@
   --accent-fw: 700;
   --main-text-color: #000;
   --accent-color: #000;
+  --text-stroke: #fff;
+  --button-hover: #fff;
   --bg-color: #fff;
   --bg-image: repeating-linear-gradient(
       90deg,
@@ -25,6 +27,8 @@
     --accent-fw: 700;
     --main-text-color: #000;
     --accent-color: #000;
+    --text-stroke: #fff;
+    --button-hover: #fff;
     --bg-color: #fff;
     --bg-image: repeating-linear-gradient(
         90deg,
@@ -40,6 +44,8 @@
   --accent-fw: 785;
   --main-text-color: #00cc14;
   --accent-color: #00cc14;
+  --text-stroke: #000;
+  --button-hover: #00cc14;
   --bg-color: #000;
   --bg-image: repeating-linear-gradient(
       90deg, 
@@ -55,6 +61,8 @@
     --accent-fw: 785;
     --main-text-color: #00cc14;
     --accent-color: #00cc14;
+    --text-stroke: #000;
+    --button-hover: #00cc14;
     --bg-color: #000;
     --bg-image: repeating-linear-gradient(
         90deg,

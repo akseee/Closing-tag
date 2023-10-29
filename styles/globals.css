@@ -37,6 +37,7 @@ input {
   font-size: inherit;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 ul,
