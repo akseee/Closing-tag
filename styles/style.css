@@ -191,6 +191,8 @@
   line-height: 116.667%;
 }
 
+
+
 .like-buttons {
   margin: 0 25px 25px;
   align-self: end;
@@ -213,8 +215,8 @@
   border: 2px solid var(--accent-color);
 }
 
-.like-icon {
-}
+
+
 
 .card__like-button {
   block-size: 100%;
@@ -265,7 +267,7 @@
 .footer {
   max-inline-size: 314px;
   background-color: var(--bg-color);
-  margin: 54px auto 105px;
+  margin: 54px auto 0;
 }
 
 .footer__save-button {
@@ -286,6 +288,7 @@
 }
 
 .floppy-disk {
+  
 }
 
 
@@ -323,14 +326,7 @@
   filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
 }
 
-@keyframes arrow {
-  from {
-    transform: translateX(-20px);
-  }
-  to {
-    transform: translateX(-16px);
-  }
-}
+
 
 /* media */
 @media (width <=375px) {

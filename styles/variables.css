@@ -19,4 +19,8 @@
     linear-gradient(180deg, #e7e7e7 0.01%%, #1a1a1a 100%);
   --width: clamp(375px, 50%, 696px);
   /* animation */
+
+  /* heart-button */
+  --countour-heart: #000;
+  --core-heart: #ff0000;
 }
