@@ -9,6 +9,7 @@
   --main-text-color: #000;
   --accent-color: #000;
   --button-hover: #fff;
+
   --bg-color: #fff;
   --bg-image: repeating-linear-gradient(
       90deg,
@@ -17,10 +18,9 @@
     ),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(180deg, #e7e7e7 0.01%%, #1a1a1a 100%);
+    
   --width: clamp(375px, 50%, 698px);
-  /* animation */
 
-  /* heart-button */
   --countour-heart: #000;
   --core-heart: #ff0000;
 }

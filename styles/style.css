@@ -329,7 +329,6 @@
 
 .multiple {
   filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
-  filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
 }
 
 /* media */
@@ -338,19 +337,17 @@
     width: 100%;
   }
   .card__title {
-    padding: ;
+    padding: 3.5px 10px;
   }
-
   .image-watermark {
     top: 25px;
     right: 11px;
   }
   .footer__save-button {
     flex-direction: column;
-  }
-  .footer__save-button {
     min-block-size: 80px;
   }
+
   .dialog {
     padding: 30px 40px;
   }
