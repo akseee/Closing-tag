@@ -273,7 +273,7 @@
 }
 
 .window__content {
-  color: var(--button-hover);
+  color: var(--accent-color);
   display: flex;
   gap: 20px;
 }
