@@ -157,7 +157,7 @@
                   если я не справлюсь?
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний о начале первого спринта.
                 </p>
               </article>
 
@@ -226,7 +226,7 @@
                   себя.
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний об окончании первого спринта.
                 </p>
               </article>
 
@@ -294,7 +294,7 @@
                   сделать идеально, старались просто сделать.
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний о начале второго спринта.
                 </p>
               </article>
 
@@ -362,7 +362,7 @@
                   единомышленники, не правда ли?
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний об окончании второго спринта.
                 </p>
               </article>
 
@@ -429,7 +429,7 @@
                   Значит, пришло время посмотреть на задачу под другим углом.
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний о начале третьего спринта.
                 </p>
               </article>
 
@@ -499,7 +499,7 @@
                   Вспомните, откуда вы её черпали.
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний об окончании третьего спринта.
                 </p>
               </article>
 
@@ -569,7 +569,7 @@
                   есть результат.
                 </p>
                 <p class="text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
                 </p>
               </article>
 
@@ -617,30 +617,28 @@
           </li>
         </ul>
       </section>
-
-      <footer class="footer">
-        <button class="footer__save-button button" type="button" onclick="window['save-window'].showModal();"  aria-controls="save-window">
-          <svg viewBox="0 0 39 39" class="save-button__icon">
+    </main>
+    <footer class="footer">
+      <button class="footer__save-button button" type="button" onclick="window['save-window'].showModal();"  aria-controls="save-window">
+        <svg viewBox="0 0 39 39" class="save-button__icon">
+          <use href="#floppy" class="floppy-disk"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </footer>
+    <dialog id="save-window" class="dialog">
+      <div class="window__content">
+          <svg viewBox="0 0 39 39" class="window__icon">
             <use href="#floppy" class="floppy-disk"></use>
           </svg>
-          <span class="button__text">Сохранить на память</span>
+          <p class="window__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <form method="dialog">
+        <button class="dialog-button button" type="submit">
+          <span class="button__text">ок</span>
         </button>
-      </footer>
-
-      <dialog id="save-window" class="dialog">
-        <div class="window__content">
-            <svg viewBox="0 0 39 39" class="window__icon">
-              <use href="#floppy" class="floppy-disk"></use>
-            </svg>
-            <p class="window__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <form method="dialog">
-          <button class="dialog-button button" type="submit">
-            <span class="button__text">ок</span>
-          </button>
-        </form> 
-      </dialog>
-    </main>
+      </form> 
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
