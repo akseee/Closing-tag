@@ -1,4 +1,4 @@
 # Проектная работа «Закрывающий тег»
 
-https://github.com/akseee/zakrivayuschiy-teg-f
+https://akseee.github.io/Closing-tag/
 
