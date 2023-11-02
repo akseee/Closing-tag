@@ -48,17 +48,13 @@
   gap: 14px;
 }
 
-.theme-menu__item {
-  max-block-size: 14px;
-  font-size: 14px;
-  line-height: 100%;
-  padding-inline-start: 15px;
-}
-
 .theme-menu__button {
   position: relative;
-  text-transform: uppercase;
+  max-block-size: 14px;
   padding: 0;
+  padding-inline-start: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -97,6 +93,10 @@
   inline-size: 100%;
 }
 
+.theme-menu__button:focus-visible::after {
+  inline-size: 100%;
+}
+
 .card__list {
   font-size: 18px;
   display: flex;
@@ -128,7 +128,7 @@
 .image-watermark {
   opacity: 0.6;
   font-size: 14px;
-  -webkit-text-stroke: 1px var(--text-stroke);
+  text-shadow: 1px var(--text-stroke);
   font-family: var(--accent-ff);
   position: absolute;
   top: 25px;
@@ -178,16 +178,16 @@
   padding: 0;
 }
 
-.article__icon-button:focus {
+.card__icon-button:focus {
   outline: none;
 }
 
-.article__icon-button:focus-visible {
+.card__icon-button:focus-visible {
   transition: 0.3s ease;
   border: 2px solid var(--accent-color);
 }
 
-.article__like-button {
+.card__like-button {
   block-size: 100%;
   padding: 0 17px;
   inline-size: 130px;
@@ -200,6 +200,12 @@
 }
 
 .button:focus {
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
+.button:focus-visible {
   outline: none;
   transition: 0.3s ease;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
@@ -227,7 +233,7 @@
   font-family: var(--accent-ff);
   font-weight: var(--main-fw, 400);
   font-size: 14px;
-  line-height: 90%;
+  line-height: 0.9;
   position: relative;
   z-index: 1;
   color: var(--button-hover);
@@ -251,7 +257,6 @@
 
 .save-button__icon {
   inline-size: 21px;
-  aspect-ratio: 1;
   z-index: 1;
   color: var(--button-hover);
   mix-blend-mode: difference;
@@ -291,7 +296,6 @@
 
 .window__icon {
   max-inline-size: 39px;
-  aspect-ratio: 1;
 }
 
 .dialog-button {
