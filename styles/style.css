@@ -172,10 +172,17 @@
   block-size: 38px;
 }
 
+
 .card__icon-button {
   block-size: 100%;
   border: 2px solid transparent;
   padding: 0;
+}
+
+.like-icon {
+  width: 39px;
+  height: 36px;
+  fill: none;
 }
 
 .card__icon-button:focus {
@@ -197,6 +204,7 @@
   border: 2px solid var(--accent-color);
   position: relative;
   background-color: var(--bg-color);
+  transition: 0.3s;
 }
 
 .button:focus {
