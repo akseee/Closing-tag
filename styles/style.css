@@ -125,6 +125,11 @@
   position: relative;
 }
 
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
 .image-watermark {
   opacity: 0.6;
   font-size: 14px;
@@ -135,12 +140,6 @@
   right: 25px;
   mix-blend-mode: hard-light;
 }
-
-.image {
-  object-fit: cover;  
-  object-position: center;
-}
-
 
 @supports (
   (text-stroke: 1px var(--text-stroke)) or
